@@ -1,147 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airtribe PM Launchpad</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .hero {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .features .card {
-            transition: transform 0.3s ease-in-out;
-        }
-        .features .card:hover {
-            transform: scale(1.05);
-        }
-        .testimonials {
-            background-color: #f8f9fa;
-            padding: 50px 20px;
-        }
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brahma Experience</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Brahma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product-management">Product Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#journey">Your Journey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#steps">Key Steps</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Airtribe Product Management Launchpad</h1>
-            <p class="lead">Unlock career possibilities with the right guidance, tools, and network.</p>
-            <a href="#program-details" class="btn btn-primary btn-lg mt-3">Explore the Program</a>
-        </div>
+  <div class="content-container text-center">
+    <section class="container-with-circle pt-5 mb-5">
+      <div class="logo-title-container mb-3 mt-5">
+        <span><img class="img-fluid mb-3" src="./assets/logo.png" alt="Logo"></span>
+        <h1 class="display-5 mb-3">Brahma</h1>
+      </div>
+      <h1 class="mb-4 display-4 custom-display">Brahma Experience</h1>
+      <!-- Description -->
+      <h2 class="unlockCareer">Unlock career possibilities with</h2>
+      <h2 class="unlockCareer">the right guidance, tools, and network.</h2>
     </section>
 
-    <!-- Features Section -->
-    <section id="program-details" class="features py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Program Features</h2>
-                <p>Designed to help you upskill and transition into product management.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center">
-                            <i class="fa-solid fa-chalkboard-teacher fa-2x mb-3 text-primary"></i>
-                            <h5 class="card-title">Expert-Led Sessions</h5>
-                            <p>Learn from experienced product managers and industry leaders.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center">
-                            <i class="fa-solid fa-users fa-2x mb-3 text-success"></i>
-                            <h5 class="card-title">Community Support</h5>
-                            <p>Build connections with peers, mentors, and industry experts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center">
-                            <i class="fa-solid fa-graduation-cap fa-2x mb-3 text-warning"></i>
-                            <h5 class="card-title">Capstone Project</h5>
-                            <p>Work on a real-world problem and present to an expert jury.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="product-management" class="pt-5">
+      <h1 class="mb-4 custom-Instroducing letter-spacing">INTRODUCING</h1>
+      <h2 class="mb-4 custom-Instroducing">Product Management Launchpad
+        <div class="pt-3"></div>
+        <!-- <span class="classroom-edition custom-Instroducing">Classroom Edition</span> -->
+      </h2>
+      <div class="content-container text-center">
+
+        <div class="banner">
+          <h5 class="classroom-edition-title custom-Instroducing">Classroom Edition</h5>
+          <h3 class="subtitle">
+            A 16-week comprehensive program on product management. It's designed by experts to help you upskill or
+            transition
+            into the field.
+          </h3>
         </div>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">What Our Learners Say</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-4">
-                                <p>"This program boosted my confidence and helped me prepare for job interviews."</p>
-                            </blockquote>
-                            <footer class="blockquote-footer">Nishu Suryavanshi, <cite>Product Manager, Airtel</cite></footer>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-4">
-                                <p>"I transitioned from a non-technical job to a PM role successfully!"</p>
-                            </blockquote>
-                            <footer class="blockquote-footer">Prasad Akki, <cite>Product Manager, ConveGenius</cite></footer>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-4">
-                                <p>"The breakout room activities and assignments shaped my professional personality."</p>
-                            </blockquote>
-                            <footer class="blockquote-footer">Rahul Sharma, <cite>Sr. Product Manager, MyTeam11</cite></footer>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="journey" class="pt-3">
+      <h1 class="mb-4 custom-Instroducing">Your Journey Ahead</h1>
+      <img class="roadmap" src="./assets/roadmap.png" alt="Road Map">
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="mb-0">© 2024 Airtribe. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <section id="steps" class="pt-5">
+      <div class="vertical-line"></div>
+      <h1 class="mb-4 custom-Instroducing"> Key steps in your journey</h1>
+    </section>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <section
+      style="display: flex; flex-direction: row; width: 100%; height: 100%; max-width: 100%; max-height: 100%; place-items: center; margin: 0px; padding: 0px; list-style-type: none; opacity: 1; user-select: none;">
+      <div class="main-content">
+        <div class="left-container">
+          <div class="items">
+            <div class="item">
+              <div class="heading">Orientation</div>
+              <div class="description">A 3-day immersive kick-off with a live case study, fun games &amp; meaningful
+                networking</div> <!---->
+            </div>
+            <div class="item active">
+              <div class="heading">Live classes &amp; weekly assignments</div>
+              <div class="description">Learn through interactive live sessions &amp; hands-on assignments to assess your
+                skills</div>
+              <div class="progress">
+                <div data-v-584fdcfd="" class="progress-container" style="background: transparent;">
+                  <div data-v-584fdcfd="" class="progress-bar"
+                    style="width: 100.8%; background: var(--action-primary-active);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="heading">Capstone</div>
+              <div class="description">Hone your product management skills by solving a real-world capstone project
+              </div> <!---->
+            </div>
+            <div class="item">
+              <div class="heading">Demo Day</div>
+              <div class="description">Compete to be the cohort's top performer by presenting your capstone to expert
+                PMs</div> <!---->
+            </div>
+            <div class="item">
+              <div class="heading">Career assistance</div>
+              <div class="description">Become interview-ready through a structured approach &amp; get referred to our
+                hiring network</div> <!---->
+            </div>
+          </div>
+        </div>
+        <div class="right-container"><img
+            src="https://space-mycohort-web.sgp1.cdn.digitaloceanspaces.com/phoenix/Product-Management/Hands-On.png"
+            alt="image-1"></div>
+      </div>
+    </section>
+
+
+
+
+  </div>
+
+  <!-- Go to Top Button -->
+  <button id="goToTopBtn" class="btn btn-primary go-to-top-btn" onclick="scrollToTop()">
+    &#8593; <!-- Arrow symbol -->
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript for "Go to Top" Button -->
+  <script>
+    // Get the button
+    var mybutton = document.getElementById("goToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
+
 </html>
-
-
-
-

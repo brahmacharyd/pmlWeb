@@ -1,0 +1,270 @@
+body {
+  background-image: url('./assets/img1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+.container-with-circle {
+  position: relative;
+  padding-top: 100px;
+}
+
+.container-with-circle::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 950px;
+  height: 950px;
+  background-image: url('./assets/dots.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgb(46, 42, 42) 0%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 10%, rgb(50, 48, 48) 30%);
+}
+
+.vertical-line {
+  position: relative;
+  margin-top: 0px;
+  width: 2px;
+  height: 200px;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roadmap {
+  margin-top: 0px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.content-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.5;
+  color: white;
+}
+
+.custom-display {
+  font-size: 4rem;
+  background-image: linear-gradient(93.83deg, #d79f7b 15.12%, #d2c4ef 59.95%, #9070d5 104.78%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.logo-title-container img {
+  width: 80px;
+  height: auto;
+}
+
+.logo-title-container h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.custom-Instroducing {
+  font-size: 3rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgba(171, 190, 228, 0.888), rgba(197, 195, 239, 0.7));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.letter-spacing {
+  letter-spacing: 0.9rem;
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.unlockCareer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .custom-display {
+    font-size: 4rem;
+  }
+  .logo-title-container h1 {
+    font-size: 2.5rem;
+  }
+  .custom-Instroducing {
+    font-size: 2.8rem;
+  }
+  .subtitle, .unlockCareer {
+    font-size: 1.4rem;
+    max-width: 90%;
+  }
+  .roadmap {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  .container-with-circle::before {
+    width: 700px;
+    height: 700px;
+    top: 75%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .custom-display {
+    font-size: 5rem;
+  }
+  .logo-title-container h1 {
+    font-size: 2.8rem;
+  }
+  .custom-Instroducing {
+    font-size: 2.5rem;
+  }
+  .subtitle, .unlockCareer {
+    font-size: 1.6rem;
+    max-width: 95%;
+  }
+  .roadmap {
+    width: 85%;
+    max-width: 1100px;
+  }
+  .container-with-circle::before {
+    width: 800px;
+    height: 800px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .custom-display {
+    font-size: 6rem;
+  }
+  .logo-title-container h1 {
+    font-size: 3rem;
+  }
+  .custom-Instroducing {
+    font-size: 3rem;
+  }
+  .subtitle, .unlockCareer {
+    font-size: 1.8rem;
+    max-width: 800px;
+  }
+  .roadmap {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 80px;
+  }
+  .container-with-circle::before {
+    width: 950px;
+    height: 950px;
+  }
+}
+
+
+
+.go-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 100;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-top-btn:hover {
+  background-color: #0056b3;
+}
+
+.go-to-top-btn:focus {
+  outline: none;
+}
+
+
+ .banner {
+  width: 100%;
+  min-height: 21.75rem; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  border-radius: 1.4rem; 
+  border: 3px solid #683fbe;
+ 
+  z-index: 2; 
+  text-align: center; 
+  mask-image: linear-gradient(to top, transparent 42%, rgb(46, 42, 42) 54%);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
