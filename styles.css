@@ -1,5 +1,6 @@
 body {
-  background-image: url('./assets/img1.jpg');
+  /* background-image: url('./assets/img1.jpg'); */
+  background-color:  #171421;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -13,6 +14,7 @@ body {
   color: white;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
+  position: relative;
 }
 
 .container-with-circle {
@@ -64,11 +66,14 @@ body {
   margin-top: 20px;
 }
 
-.content-container {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
+  /* Ensure that all content is centered within the viewport */
+  .content-container {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+  }
 
 h1, h2, h3 {
   margin: 10px 0;
@@ -103,7 +108,7 @@ h1, h2, h3 {
 }
 
 .custom-Instroducing {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   background-image: linear-gradient(to right, rgba(171, 190, 228, 0.888), rgba(197, 195, 239, 0.7));
   -webkit-background-clip: text;
@@ -193,7 +198,7 @@ h1, h2, h3 {
     font-size: 3rem;
   }
   .custom-Instroducing {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .subtitle, .unlockCareer {
     font-size: 1.8rem;
@@ -254,8 +259,302 @@ h1, h2, h3 {
   text-align: center; 
   mask-image: linear-gradient(to top, transparent 42%, rgb(46, 42, 42) 54%);
 } 
+.kickOffImg{
+    margin-top: 0px;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bannerCard {
+    width: 80%;
+    min-height: 21.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    border-radius: 1.4rem;
+    border: 3px solid #683fbe; /* Main border color */
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .classroom-edition-title {
+    position: relative;
+    font-size: 1.5rem;
+    color: #683fbe; /* Match the border color */
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between the title and lines */
+  }
+  
+  .classroom-edition-title::before,
+  .classroom-edition-title::after {
+    content: '';
+    flex-grow: 1; /* Automatically expand to fill available space */
+    height: 3px; /* Thickness of the line */
+    background-color: #683fbe; /* Match the border color */
+  }
+
+  
 
 
+
+
+
+
+/* Center the testimonial card */
+.testimonial-card {
+  width: 100%;
+  max-width: 90%;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  margin: 20px auto; /* Center horizontally with some spacing */
+}
+
+/* Style for the profile */
+.profile {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px; /* Space between profile and testimonial text */
+}
+
+/* Profile picture style */
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+}
+
+/* Profile information style */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Name styling */
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #683fbe;
+}
+
+/* Role styling */
+.designation .role {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Testimonial text styling */
+.testimonial {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: white;
+  text-align: left; /* Align text to the left */
+  margin: 0;
+  padding-top: 10px; /* Slight padding to separate text from the profile */
+  max-width: 800px;
+  margin-left: 100px; /* Align testimonial text with the name */
+}
+
+/* Additional styling for sections to ensure centering */
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px; /* Padding for sections */
+}
+
+/* Center the navbar items */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center navbar links */
+  gap: 20px;
+}
+
+/* Center logo in the navbar */
+.navbar-brand {
+  margin: 0 auto;
+}
+
+
+
+#ProgramPerks .row {
+  width: 80%; /* Set the row width to 80% */
+  margin: 0 auto; /* Center the row horizontally */
+}
+
+.ProgramPerksCard {
+  width: 100%; /* Card fills its column */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ProgramPerksCardImg {
+  width: 90%; /* Image takes 80% of the card's width */
+  display: block; /* Ensures it behaves like a block element */
+  margin: 20px auto 0; /* Same margin on top, left, and right */
+  object-fit: cover; /* Prevent image distortion */
+  border-radius: 2%; /* Rounded corners */
+}
+
+
+
+.ProgramPerksCardText {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center; /* Center-align the text */
+  padding: 10px;
+}
+
+
+
+
+#CurriculumCard {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.curriculum-card {
+  width: 40%;
+  height: 110px; /* Fixed height for the cards */
+  border-radius: 10px;
+  background: linear-gradient(to left, rgba(104, 63, 190, 0.8) -50%, rgba(104, 63, 190, 0) 97%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the text inside the card */
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: white; /* Text color for visibility on gradient */
+  margin-left: 200px;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    width: 100%; /* Stack the cards on smaller screens */
+  }
+}
+
+
+.points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px; /* Adjust for padding */
+  margin-left: 130PX;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Space between items */
+}
+
+.point svg {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.point span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.offlineOrientation{
+  margin-bottom: 30px; /* Space between items */
+
+}
+
+
+
+.breakdown-card {
+  height: auto; /* Allow height to adjust based on content */
+  width: 100%; /* Define the card width */
+  border-radius: 40px;
+  border: 1px solid #6a5498; /* Visible border */
+  background: linear-gradient(to bottom, rgba(32, 19, 60, 0.8), rgba(32, 19, 60, 0)); /* Transparent from top to bottom */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: block; /* Allows normal flow of content */
+  clip-path: polygon(0 0, 90% 0, 90% 100%, 0 100%); /* Vertical cut */
+  position: relative; /* Ensure the border and card background behave as expected */
+  overflow: hidden; /* Prevent any content from overflowing */
+}
+
+.breakpoint{
+  text-align: left;
+}
+
+.points {
+  text-align: left; /* Align the list to the left */
+}
+
+.points ul {
+  padding-left: 20px; /* Adds left padding to the list */
+  list-style-type: disc; /* Adds bullet points */
+}
+
+.points ul li {
+  margin-bottom: 5px; /* Adds spacing between list items */
+}
+
+
+.Youllbeable-container {
+  display: flex; /* Use flexbox to align items side by side */
+  align-items: center; /* Vertically center the text and line */
+  justify-content: center; /* Horizontally center the items */
+  gap: 10px; /* Add some spacing between the text and the line */
+}
+
+.horizontal-line {
+  position: relative;
+  width: 250px; /* The width of the horizontal line */
+  height: 2px; /* The height of the line */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+h1.offlineOrientation.breakpoint {
+  padding-top: 15px;
+}
+
+
+.assignment-card{
+  width: 60%;
+  height: 90px; /* Fixed height for the cards */
+  border-radius: 10px;
+  background: #683FB1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the text inside the card */
+  color: white;
+
+}
 
 
 
